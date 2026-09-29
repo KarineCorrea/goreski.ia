@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        header {
+            background-color: #ff7a00;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .sair {
+            background-color: white;
+            color: #ff7a00;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .conteudo {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .card {
+            background-color: white;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>IA</h1>
+        <button class="sair" onclick="sair()">Sair</button>
+    </header>
+
+    <div class="conteudo">
+        <h2>Olá! 👋</h2>
+        <p>Bem-vindo à sua página inicial.</p>
+        <div class="card">
+            <h2>Meu primeiro sistema</h2>
+            <p>
+                Essa página foi criada por mim usando
+                HTML, CSS e JavaScript.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function sair() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

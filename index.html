@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Login</title>
+
+    <style>
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            background-color: #ff7a00;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #ff7a00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+
+        <div class="logo">
+        IA
+        </div>
+
+        <h1>Bem-vindo!</h1>
+        <p>Faça login para continuar.</p>
+        <input type="email" placeholder="Seu e-mail">
+        <input type="password" placeholder="Sua senha">
+        <button onclick="entrar()">Entrar</button>
+
+    </div>
+
+    <script>
+
+        function entrar() {
+            const email = document.querySelector('input[type="email"]').value;
+            const senha = document.querySelector('input[type="password"]').value;
+            if (email === "" || senha === "") {
+                alert("Preencha o e-mail e a senha.");
+                return;
+            }
+            
+            window.location.href = "inicio.html";
+        }
+
+    </script>
+</body>
+
+</html>
